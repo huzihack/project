@@ -1,11 +1,11 @@
-package com.my.dao;
+package com.my.mapper;
 
 import java.util.List;
 import java.util.Map;
 
 import com.my.bean.UserInfo;
 
-public interface IDBDao {
+public interface UserInfoMapper {
 	
 	public UserInfo getUserInfoById(Long id);
 	public UserInfo getUserInfoByObj(UserInfo info);
@@ -15,8 +15,5 @@ public interface IDBDao {
 	public int insert(UserInfo userInfo);
 	public void update (UserInfo userInfo);
 	public void delete (UserInfo userInfo);
-	
-	
-	
 
 }
